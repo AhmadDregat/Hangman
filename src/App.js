@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+
+import "./App.css";
+import Solution from "./components/Solution";
+import Score from "./components/Score";
+import Letter from "./components/Letter";
+import Letters from "./components/Letters";
 
 function App() {
+  this.state = {
+    letterStatus: {
+      a: false,
+      b: false,
+      c: false,
+      d: false,
+      e: false,
+      f: false,
+      g: false,
+      h: false,
+      i: false,
+      j: false,
+      k: false,
+      l: false,
+      m: false,
+      n: false,
+      o: false,
+      p: false,
+      q: false,
+      r: false,
+      s: false,
+      t: false,
+      u: false,
+      v: false,
+      w: false,
+      x: false,
+      y: false,
+      z: false,
+    },
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Solution />
+      <Score />
+      <Letter />
+      <Letters />
     </div>
   );
 }
